@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Principal</title>
+    <link rel="stylesheet" href="../css/principal.css">
+    <link rel="icon" href="../img/icon-diente.png">
+    <!--fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav>
+        
+        <img src="../img/univalle logo.png" alt="univalle-logo" class="logo-f-img">
+
+        <ul>
+            <li>Inicio</li>
+            <li>Revisado</li>
+            <li>Pendiente</li>
+            <li>En espera</li>
+        </ul>
+    </nav>
+    <form action="procesar.php" method="post">
+
+        <h2>Datos del Paciente</h2>
+        <label for="nombre">Nombre:</label>
+        <input type="text" name="nombre" required>
+        <br>
+
+        <label for="apellido1">Apellido 1:</label>
+        <input type="text" name="apellido1" required>
+        <br>
+
+        <label for="apellido2">Apellido 2:</label>
+        <input type="text" name="apellido2">
+        <br>
+
+        <label for="fechaNacimiento">Fecha de Nacimiento:</label>
+        <input type="date" name="fechaNacimiento" required>
+        <br>
+
+        <label for="telefono">Teléfono:</label>
+        <input type="text" name="telefono" required>
+        <br>
+
+        <label for="estadoCivil">Estado Civil:</label>
+        <input type="text" name="estadoCivil" required>
+        <br>
+
+        <label for="ocupacion">Ocupación:</label>
+        <input type="text" name="ocupacion" required>
+        <br>
+
+        <label for="genero">Género:</label>
+        <input type="text" name="genero" required>
+        <br>
+
+        <label for="direccion">Dirección:</label>
+        <input type="text" name="direccion" required>
+        <br>
+
+        <label for="procedencia">Procedencia:</label>
+        <input type="text" name="procedencia" required>
+        <br>
+
+        <h2>Antecedentes No Patológicos</h2>
+        <label for="respiracionBucal">Respiración Bucal:</label>
+        <input type="checkbox" name="respiracionBucal">
+        <br>
+
+        <label for="chupon">Chupón:</label>
+        <input type="checkbox" name="chupon">
+        <br>
+
+        <label for="fumador">Fumador:</label>
+        <input type="checkbox" name="fumador">
+        <br>
+
+
+        <h2>Antecedentes Patológicos</h2>
+        <label for="familiares">Antecedentes Familiares:</label>
+        <input type="text" name="familiares">
+        <br>
+
+        <label for="intervQuirurjuca">Intervención Quirúrgica:</label>
+        <input type="checkbox" name="intervQuirurjuca">
+        <br>
+
+
+        <h2>Enfermedades Sistématicas</h2>
+        <label for="cardiovasculares">Enfermedades Cardiovasculares:</label>
+        <input type="checkbox" name="cardiovasculares">
+        <br>
+
+        <h2>Anamnesis</h2>
+        <label for="motivoConsulta">Motivo de Consulta:</label>
+        <input type="text" name="motivoConsulta" required>
+        <br>
+
+
+        <h2>Examen Clínico</h2>
+        <label for="estadoSalud">Estado de Salud:</label>
+        <input type="text" name="estadoSalud" required>
+        <br>
+
+        <h2>Signos Vitales</h2>
+        <label for="psa1">PSA1:</label>
+        <input type="text" name="psa1" required>
+        <br>
+
+
+        <input type="submit" value="Guardar">
+    </form>
+</body>
+</html>
